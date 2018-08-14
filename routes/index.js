@@ -32,8 +32,7 @@ router.post('/contact', function(req, res, next) {
 				}
 			else
 			{
-				// res.render('index',{title:"DeVVil-Tourism & handicrafts"});
-				res.redirect(`http://deepakkumarpandeychs.000webhostapp.com/updatestatus1.php?id=5&status=${email}`);
+				res.render('index',{title:"DeVVil-Tourism & handicrafts"});
 			}
 	});
 
