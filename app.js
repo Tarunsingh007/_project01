@@ -1,14 +1,16 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var mongo=require('mongodb');
+var expressValidator=require('express-validator');
+var mongoose=require('mongoose');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs=require('hbs');
 var indexRouter = require('./routes/index');
 var villagesRouter = require('./routes/villages');
-
 var app = express();
-
+var mongoose=require('./mongooseconnect.js');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

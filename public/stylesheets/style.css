@@ -11,3 +11,16 @@ a {
 {
 	margin-top:30px;
 }
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+#textarea{
+	height:150px;
+}
+#villdetails
+{
+	margin-top:10px;
+}

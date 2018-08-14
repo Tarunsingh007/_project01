@@ -8,7 +8,16 @@ router.get('/details', function(req, res, next) {
 
 
 router.get('/categories', function(req, res, next) {
-  res.render('villages/categories',{title:"Categories"});
+  res.render('villages/categories',{title:"tourism"});
+});
+router.get('/categories/lakes', function(req, res, next) {
+  res.render('villages/lakes',{title:"lakes"});
+});
+router.get('/categories/foods', function(req, res, next) {
+  res.render('villages/foods',{title:"foods"});
+});
+router.get('/categories/handicrafts', function(req, res, next) {
+  res.render('villages/handicraft',{title:"handicrafts"});
 });
 
 module.exports = router;
