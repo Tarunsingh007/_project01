@@ -28,11 +28,11 @@ router.post('/contact', function(req, res, next) {
 			if(err)
 				{
 					return err;
-					res.render('contact/contact.hbs',{title:"ContactUs"});
+					res.redirect('/contact');
 				}
 			else
 			{
-				res.render('index',{title:"DeVVil-Tourism & handicrafts"});
+				res.redirect('/');
 			}
 	});
 
