@@ -11,11 +11,13 @@ var hbs=require('hbs');
 var indexRouter = require('./routes/index');
 var villagesRouter = require('./routes/villages');
 var app = express();
-var mongoose=require('./mongooseconnect.js');
+// var mongoose=require('./mongooseconnect.js');
+// var pymts=require('./payments.js');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
+
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
